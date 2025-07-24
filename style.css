@@ -261,6 +261,39 @@
 .deal_3 h4 {
   font-size: 1.75rem;
 }
+/* ..............join Us section.............. */
+.join {
+  width: 100%;
+  background-image: url("./assets/news-letter-bg.png");
+  height: 533px;
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-size: cover;
+  margin-bottom: 200px;
+}
+
+.join_box {
+  /* background-color: #a908e9; */
+  width: 100%;
+  height: auto;
+}
+.join_box .sec_title {
+  color: white;
+  margin-bottom: 25px;
+}
+.join_input {
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+}
+
+.email {
+  width: 45%;
+  padding: 20px 0 20px 15px;
+}
 
 /* ..>>>>>>>>>>Media Quary<<<<<<<<<<<<<<<<< */
 @media screen and (max-width: 576px) {
@@ -408,7 +441,7 @@
   .deals_img_cont {
     flex-direction: column;
     gap: 15px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
 
   .deal_left {
@@ -428,5 +461,26 @@
   }
   .deal_1 {
     margin-bottom: 15px;
+  }
+
+  /* ...........Join us Section......... */
+  .join {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 275px;
+    margin-top: 40px;
+  }
+  .email {
+    width: 218px;
+    padding: 20px 0 20px 15px;
+  }
+
+  .join_box .btn {
+    padding: 19px 12px;
+  }
+  .join_box .sec_title {
+    color: white;
+    font-size: 1.25rem;
+    margin-bottom: 25px;
   }
 }
