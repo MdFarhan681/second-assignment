@@ -173,6 +173,7 @@ body {
 }
 
 /* .................Plant Lovers................ */
+
 .plant_lover {
   position: relative;
 }
@@ -215,6 +216,19 @@ body {
   margin-top: 23px;
   padding-left: 10px;
   font-size: 1.5;
+}
+
+.batch {
+  animation: rotatebatch 50s linear infinite;
+}
+
+@keyframes rotatebatch {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 /* .........Latest Deals............... */
