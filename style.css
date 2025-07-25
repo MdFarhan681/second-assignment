@@ -78,7 +78,7 @@ body {
   font-size: 1.2rem;
 }
 .cart {
-  padding-left: 2px;
+  padding-left: 1.5px;
 }
 .nav_home {
   font-weight: 700;
@@ -219,7 +219,7 @@ body {
 }
 
 .batch {
-  animation: rotatebatch 50s linear infinite;
+  animation: rotatebatch 70s linear infinite;
 }
 
 @keyframes rotatebatch {
@@ -363,8 +363,8 @@ body {
   /* background-color: #e95a08; */
 }
 .foot_logo img {
-  width: 37px;
-  height: 37px;
+  width: 33px;
+  height: 33px;
   margin-right: 40px;
 }
 
