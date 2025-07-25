@@ -6,6 +6,9 @@
 }
 
 /* .......Shared style........ */
+body {
+  background-color: #f6f8ff;
+}
 .sec_width {
   width: 85%;
   margin: 0 auto;
@@ -50,9 +53,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 12px;
-  filter: brightness(0.82);
+  /* filter: brightness(0.788); */
 }
-
+.icon {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1.5px black;
+}
 /* ...................Header.................... */
 
 /* .........navber......... */
@@ -81,6 +87,9 @@
 .nav_shop,
 .nav_about {
   color: #8987a1;
+}
+.nav_cart {
+  color: #111111;
 }
 /* .........header main......... */
 .head_main {
@@ -118,6 +127,8 @@
 .sec_cont {
   margin: 0 auto;
   text-align: center;
+  padding-bottom: 37px;
+  width: 85%;
 }
 
 /* .....card....... */
@@ -144,6 +155,7 @@
   font-size: 1.3rem;
   font-weight: 500;
   color: #111111;
+  margin-bottom: 5px;
 }
 
 .card_cost {
@@ -216,6 +228,7 @@
 .deals_img_cont {
   margin-bottom: 40px;
   color: white;
+  margin-top: 100px;
 }
 
 .deal_left {
@@ -226,14 +239,16 @@
 }
 
 .deal_3 {
-  background: url("./assets/deal-zabo.png");
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.55)),
+    url("./assets/deal-zabo.png");
   flex: 2;
   background-size: cover;
   margin-left: 25px;
 }
 
 .deal_1 {
-  background: url("./assets/deal-bloom.png");
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.55)),
+    url("./assets/deal-bloom.png");
   background-size: cover;
   height: 205px;
   margin-bottom: 25px;
@@ -241,7 +256,8 @@
 }
 
 .deal_2 {
-  background: url("./assets/deal-ana.png");
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.55)),
+    url("./assets/deal-ana.png");
   background-size: cover;
   height: 210px;
   /* background-color: rgba(0, 0, 0, 0.92); */
@@ -272,7 +288,7 @@
   align-items: center;
   text-align: center;
   background-size: cover;
-  margin-bottom: 200px;
+  margin-bottom: 50px;
 }
 
 .join_box {
@@ -293,6 +309,49 @@
 .email {
   width: 45%;
   padding: 20px 0 20px 15px;
+}
+
+/* .........Footer................. */
+.footer {
+  margin-bottom: 25px;
+  justify-content: space-around;
+  gap: 50px;
+  /* background-color: aqua; */
+}
+.foot_cont {
+  flex: 2;
+}
+
+.foot_cont img {
+  margin-left: 15px;
+}
+.foot_name1 {
+  flex: 1;
+}
+
+.foot_name1 ul li,
+.foot_name2 ul li {
+  list-style: none;
+  margin-bottom: 30px;
+  color: #8987a1;
+  font-size: 1rem;
+}
+
+.foot_name2 {
+  flex: 1;
+}
+.foot_logo {
+  flex: 2;
+  display: flex;
+  margin-left: 60px;
+  margin-top: 15px;
+
+  /* background-color: #e95a08; */
+}
+.foot_logo img {
+  width: 37px;
+  height: 37px;
+  margin-right: 40px;
 }
 
 /* ..>>>>>>>>>>Media Quary<<<<<<<<<<<<<<<<< */
@@ -329,15 +388,14 @@
   /* ..........head main........... */
   .head_main {
     flex-direction: column-reverse;
+    width: 100%;
+    margin-bottom: 50px;
   }
 
   .head_main_cont .sec_title {
     font-size: 1.5rem;
   }
 
-  .head_main {
-    width: 95%;
-  }
   .head_main_cont {
     width: 95%;
   }
@@ -346,7 +404,7 @@
   }
 
   .head_main_cont .sec_para {
-    padding-right: 15px;
+    padding-right: 10px;
     font-size: 0.87rem;
   }
 
@@ -376,7 +434,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     /* background-color: rgb(50, 28, 160); */
-    /* width: 100%; */
     height: fit-content;
   }
   .card {
@@ -413,9 +470,11 @@
   .batch {
     display: none;
   }
+
   .lovers {
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 50px;
+    margin-bottom: 100px;
   }
 
   .lover_img {
@@ -424,6 +483,12 @@
   .lover_cont {
     padding: 0;
   }
+
+  .sec_cont {
+    padding-bottom: 20px;
+    width: 90%;
+  }
+
   .lover_cont .sec_title {
     font-size: 1.5rem;
     letter-spacing: normal;
@@ -431,17 +496,20 @@
   .lover_cont .sec_para {
     line-height: normal;
     text-align: justify;
+    margin-left: 0px;
   }
 
   /* ........Latest Deals...... */
   .sec_head_cont {
     width: 100%;
+    margin-bottom: 20px;
   }
 
   .deals_img_cont {
     flex-direction: column;
     gap: 15px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    margin-top: 30px;
   }
 
   .deal_left {
@@ -482,5 +550,23 @@
     color: white;
     font-size: 1.25rem;
     margin-bottom: 25px;
+  }
+  .footer {
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+  }
+  .foot_name1,
+  .foot_name2 {
+    margin-bottom: 0;
+  }
+  .foot_logo {
+    align-items: flex-start;
+    margin: 20px;
+    margin-bottom: 50px;
+  }
+  .foot_logo img {
+    width: 33px;
+    height: 33px;
   }
 }
